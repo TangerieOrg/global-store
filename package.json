@@ -1,0 +1,25 @@
+{
+  "name": "@tangerie/global-store",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "author": "Tangerie <josh.cavill01@gmail.com> (https://github.com/Tangerie)",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "immer": "^10.0.2",
+    "preact": "^10.15.1"
+  }
+}
